@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "f8b9767c-8311-444d-b2ca-ddc996fa1ea5",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24571573"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"sayed\",\r\n    \"email\": \"ismailMahmou@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"sayed\",\r\n    \"email\": \"ismailMahmou@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"sayed\",\r\n    \"email\": \"ismailMahmou@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"sayed\",\r\n    \"email\": \"ismailMahmou@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "studrntOperation",
+			"item": [
+				{
+					"name": "UpdatePassword",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNiZW5kYXJ5OTc3QGdtYWlsLmNvbSIsImlkIjoiNjQwYmE1ZjFmN2IyNWNjNTE5ZGUwZjI3Iiwicm9sZSI6InVzZXIiLCJpYXQiOjE2Nzg0ODczNjQsImV4cCI6MTY3ODU3Mzc2NH0.7Vp1Rz1I7PJGSRnH0rqn6b8nXetNj8zBkXXiRbGcn1s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNiZW5kYXJ5OTc3QGdtYWlsLmNvbSIsImlkIjoiNjQwYmE1ZjFmN2IyNWNjNTE5ZGUwZjI3Iiwicm9sZSI6InVzZXIiLCJpYXQiOjE2Nzg0ODczNjQsImV4cCI6MTY3ODU3Mzc2NH0.7Vp1Rz1I7PJGSRnH0rqn6b8nXetNj8zBkXXiRbGcn1s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findDeletedStudents",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNiZW5kYXJ5OTc3QGdtYWlsLmNvbSIsImlkIjoiNjQwYmE1ZjFmN2IyNWNjNTE5ZGUwZjI3Iiwicm9sZSI6InVzZXIiLCJpYXQiOjE2Nzg0ODczNjQsImV4cCI6MTY3ODU3Mzc2NH0.7Vp1Rz1I7PJGSRnH0rqn6b8nXetNj8zBkXXiRbGcn1s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "addbook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/USER/Pictures/part11 exercise p2.mp4_snapshot_08.24.933.jpg"
+								},
+								{
+									"key": "bookName",
+									"value": "Nosql",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/640fa050a80fe92dfcd865e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"640fa050a80fe92dfcd865e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatBook",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/USER/Pictures/part12 exercise p3.mp4_snapshot_02.58.869.jpg"
+								},
+								{
+									"key": "bookName",
+									"value": "website",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/640fa55253b633959e63466d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"640fa55253b633959e63466d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findDeletedStudents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findDeletedStudents Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "convert to borrow books",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/update/640fa820b8570bab5ff1dff8\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"update",
+								"640fa820b8570bab5ff1dff8\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "returnBookAvalible",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsYmVuZGFyeWU2QGdtYWlsLmNvbSIsImlkIjoiNjQwZjc5NDMzM2I2YWRmZGRjNzMxYzk1Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NzM5MTYyLCJleHAiOjE2Nzg4MjU1NjJ9.CnrlA4YBVPDhpAkX87Di5Blsn43dJG7bLg3xybydWiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/update/640fa820b8570bab5ff1dff8\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"update",
+								"640fa820b8570bab5ff1dff8\n"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
